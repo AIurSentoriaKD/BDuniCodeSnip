@@ -112,6 +112,10 @@ go
 exec spEliminarAlumno 51
 go
 -- actualizar
+-- agregando dato nuevamente para el cambio
+exec spAgregarAlumno 51, 'Flores Cardenas', 'Diego', 'HH Vallejos Santoni', '06-03-2000', 'E03'
+go
+
 select * from TAlumno where CodAlumno = 51
 go
 
@@ -127,3 +131,4 @@ go
 -- buscar
 exec spBuscarAlumno 'di'
 go
+
